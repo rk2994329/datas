@@ -3,6 +3,7 @@ powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/r
 for /L %%i in (1,1,20) do (
   for /f "tokens=*" %%A in (%TEMP%\urls.txt) do (
     start msedge.exe -inprivate --start-maximized "%%A"
+    timeout /t 3
     powershell -Command "$wshell.AppActivate('Microsoft Edge')"
     timeout /t 5
     powershell -Command "$wshell = New-Object -ComObject WScript.Shell; $wshell.SendKeys('{END}');Start-Sleep -Seconds 5; $wshell.SendKeys('{HOME}'); Start-Sleep -Seconds 5; for ($i = 0; $i -lt 30; $i++){$wshell.SendKeys('{DOWN}');Start-Sleep -Seconds 1;}"
@@ -13,4 +14,3 @@ for /L %%i in (1,1,20) do (
     ) else ( echo edge closed )
     timeout /t 5
 )
-
