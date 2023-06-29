@@ -6,7 +6,7 @@ for /L %%i in (1,1,20) do (
     timeout /t 3
     powershell -Command "$wshell.AppActivate('Microsoft Edge')"
     timeout /t 5
-    powershell -Command "$wshell = New-Object -ComObject WScript.Shell; $wshell.SendKeys('{END}');Start-Sleep -Seconds 5; $wshell.SendKeys('{HOME}'); Start-Sleep -Seconds 5; for ($i = 0; $i -lt 30; $i++){$wshell.SendKeys('{DOWN}');Start-Sleep -Seconds 1;}"
+    powershell -Command "$wshell = New-Object -ComObject WScript.Shell; $wshell.SendKeys('{END}');Start-Sleep -Seconds 5; $wshell.SendKeys('{HOME}'); Start-Sleep -Seconds 5; for ($i = 0; $i -lt 50; $i++){$wshell.SendKeys('{DOWN}');Start-Sleep -Seconds 1;}"
   )
   taskkill /f /im msedge.exe
     if errorlevel 1 (
