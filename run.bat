@@ -1,5 +1,4 @@
 @echo off
-start notepad
 powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/rk2994329/datas/main/urls.txt' -OutFile '%TEMP%\urls.txt'"
 for /L %%i in (1,1,20) do (
   for /f "tokens=*" %%A in (%TEMP%\urls.txt) do (
