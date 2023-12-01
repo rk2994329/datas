@@ -2,6 +2,7 @@ https://medium.com/@gauravkachariya/how-to-add-external-python-libraries-to-aws-
 https://medium.com/@gauravkachariya/configuring-docker-integration-in-your-jenkins-container-6035034f164c
 https://medium.com/@gauravkachariya/automated-ec2-healing-rebooting-and-notifying-with-aws-lambda-and-slack-3e1b74d98557
 https://medium.com/@gauravkachariya/exploring-continuous-deployment-with-argo-cd-5aecd78dd396
+https://medium.com/@gauravkachariya/configuring-github-self-hosted-runner-on-ec2-a-step-by-step-guide-2449326c0f7b
 https://medium.com/@gauravkachariya/securing-access-to-private-github-repositories-using-ssh-keys-with-docker-6871e84cd751
 https://medium.com/@gauravkachariya/demystifying-kubernetes-dashboard-the-ultimate-setup-guide-39f38d25a145
 https://medium.com/@gauravkachariya/download-google-drive-files-on-linux-via-command-line-c0ce06b51dba
