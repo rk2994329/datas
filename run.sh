@@ -1,6 +1,4 @@
 #!/bin/bash
-echo 123456 | sudo -S apt-get update -y 
-sudo kill -9 $(sudo fuser -v /var/lib/dpkg/lock-frontend 2>/dev/null | awk '{print $NF}')
 sudo apt-get install xdotool -y
 
 # Download urls.txt from GitHub raw data
